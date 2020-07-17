@@ -1,0 +1,14 @@
+:root {
+--purpleGradientLight: hsl(236, 72%, 79%);
+--purpleGradientDark: hsl(237, 63%, 64%);
+--headingColor: hsl(233, 13%, 49%);
+--pricingColor: hsl(232, 13%, 33%);
+--white: #fff;
+--backgroundColor: hsl(240, 78%, 98%);
+/*- Light Grayish Blue: hsl(234, 14%, 74%) */
+}
+
+body {
+  background-color: var(--backgroundColor);
+
+}
