@@ -9,53 +9,51 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
 
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <title>Frontend Mentor | Pricing component with toggle challenge</title>
+  <li></li>
 </head>
 
 <body>
+  <div class="container">
+    <header class="topHeader">
+      <h1>Our Pricing</h1>
+      <div class="togglePrice"> Annually
+        Monthly</div>
+    </header>
 
-  <h1>Our Pricing</h1>
-  <div class="togglePrice"> Annually
-    Monthly</div>
-
-  <div class="priceBox">
-    Basic
-    <span class="monthlyPrice">&dollar;19.99</span>
-    <span class="annualPrice">&dollar;199.99</span>
-    500 GB Storage
-    2 Users Allowed
-    Send up to 3 GB
-    <a href="#" class="btn">Learn More</a>
-  </div>
-  <div class="priceBox feature">
-    Professional
-    <span class="monthlyPrice">&dollar;24.99</span>
-    <span class="annualPrice">&dollar;249.99</span>
-    1 TB Storage
-    5 Users Allowed
-    Send up to 10 GB
-    <a href="#" class="btn">Learn More</a>
-  </div>
-  <div class="priceBox">
-    Master
-    <span class="monthlyPrice">&dollar;39.99</span>
-    <span class="annualPrice">&dollar;399.99</span>
-    2 TB Storage
-    10 Users Allowed
-    Send up to 20 GB
-    <a href="#" class="btn">Learn More</a>
+    <div class="priceBox">
+      <h2>Basic</h2>
+      <span class="monthlyPrice price">&dollar;19.99</span>
+      <span class="annualPrice price">&dollar;199.99</span>
+      <ul>
+        <li>500 GB Storage</li>
+        <li>2 Users Allowed</li>
+        <li>Send up to 3 GB</li>
+      </ul>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="priceBox feature">
+      <h2>Professional</h2>
+      <span class="monthlyPrice price">&dollar;24.99</span>
+      <span class="annualPrice price">&dollar;249.99</span>
+      <ul>
+        <li>1 TB Storage</li>
+        <li>5 Users Allowed</li>
+        <li>Send up to 10 GB</li>
+      </ul>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+    <div class="priceBox">
+      <h2>Master</h2>
+      <span class="monthlyPrice price">&dollar;39.99</span>
+      <span class="annualPrice price">&dollar;399.99</span>
+      <ul>
+        <li>2 TB Storage</li>
+        <li>10 Users Allowed</li>
+        <li>Send up to 20 GB</li>
+      </ul>
+      <a href="#" class="btn">Learn More</a>
+    </div>
   </div>
 
 
