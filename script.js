@@ -1,5 +1,5 @@
 const toggler = document.querySelector('#checkbox');
-const monthly = Array.from(document.querySelectorAll('.monthlyPrice'));
+const monthly = document.querySelectorAll('.monthlyPrice');
 const annual = document.querySelectorAll('.annualPrice');
 
 function switcher() {
