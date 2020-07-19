@@ -1,12 +1,8 @@
-const plan = document.querySelector('.switch');
+const toggler = document.querySelector('#checkbox');
 const monthly = Array.from(document.querySelectorAll('.monthlyPrice'));
 const annual = document.querySelectorAll('.annualPrice');
-const price = document.querySelectorAll('.price');
-
 
 function switcher() {
-  console.log('switching plan');
-//when button is clicked remove 'hide from monthly and add to annual
 monthly.forEach(function(item) {
   if(item.classList.contains('hide')) {
     item.classList.remove('hide');
@@ -22,5 +18,15 @@ monthly.forEach(function(item) {
     }
   });
 }
-
-plan.addEventListener('click', switcher);
+function handleKeyUp(e) {
+  if(e.key ==='ArrowRight' && toggler.checked === false) {
+    switcher();
+    toggler.checked = true;
+  } 
+  else if (e.key ==='ArrowLeft' && toggler.checked === true) {
+    switcher();
+    toggler.checked = false;
+  }
+}
+window.addEventListener('keyup', handleKeyUp);
+toggler.addEventListener('change', switcher);
